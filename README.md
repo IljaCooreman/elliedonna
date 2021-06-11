@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Deploying
+`yarn build && firebase deploy --only hosting` to manually deploy. Commiting to main branch should trigger a build as well.
+
 ## Available Scripts
 
 In the project directory, you can run:

@@ -4,13 +4,13 @@ import 'firebase/storage'
 
 // Initialize Cloud Firestore through Firebase
 firebase.initializeApp({
-    apiKey: "AIzaSyAV2IGYchuxT8VVuN0PmsYAceWOoZRtWO8",
-    authDomain: "elliedonna-2efc0.firebaseapp.com",
-    projectId: "elliedonna-2efc0",
-    storageBucket: "elliedonna-2efc0.appspot.com",
-    messagingSenderId: "747916806008",
-    appId: "1:747916806008:web:56145a1064498dff67aa8d",
-    measurementId: "G-EXK161G3VY"
+  apiKey: "AIzaSyDBG5iKycnCm272kVYUAOBwefB23Mdzu3c",
+  authDomain: "ellie-donna.firebaseapp.com",
+  projectId: "ellie-donna",
+  storageBucket: "ellie-donna.appspot.com",
+  messagingSenderId: "53620408933",
+  appId: "1:53620408933:web:eef1131bd4d8a7f2aefc8c",
+  measurementId: "G-J3S8EZ9N4Q"
   });
   
 export const db = firebase.firestore();

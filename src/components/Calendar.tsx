@@ -14,7 +14,7 @@ const Calendar: React.FC<ICalendar> = observer(() => {
     console.log(store.daysWithAppointments[0])
   return (
     <CalendarBox>
-        <Typography variant="h2" style={{flexBasis: '100%', textAlign: 'left'}}>
+        <Typography variant="h3" style={{flexBasis: '100%', textAlign: 'left'}}>
             Maaltijd kalender
         </Typography>
       {

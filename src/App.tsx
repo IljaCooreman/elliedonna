@@ -7,7 +7,7 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-        <Typography variant="h1" style={{flexBasis: '100%', textAlign: 'left'}}>
+        <Typography variant="h2" style={{flexBasis: '100%', textAlign: 'left'}}>
             Ellie en Donna
         </Typography>
         <Typography variant="body1" style={{maxWidth: '400px', textAlign: 'left', margin: '40px 40px 60px 40px'}}>

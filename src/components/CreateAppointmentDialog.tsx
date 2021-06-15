@@ -15,6 +15,7 @@ import nlLocale from 'date-fns/locale/nl-BE/index.js';
 import { store } from '../store';
 import styled from 'styled-components';
 import { observer } from 'mobx-react-lite';
+import { sendMail } from '../helpers';
 
 
 interface ICreateAppointmentDialog {
@@ -47,7 +48,21 @@ const CreateAppointmentDialog: React.FC<ICreateAppointmentDialog> = observer(({d
     }
     db.collection('appointments').add(appointment)
     .then(() => {
-      setOpen(false)
+      setOpen(false);
+      sendMail({
+        to: ["ilja.cooreman@gmail.com", "leander.leenders@gmail.com"],
+        subject: `${volunteerName} - maaltijd levering`,
+        html: '',
+        text: `Hela koters,
+        ${volunteerName} komt op ${format(day, 'EEEE MMM do', {locale: nlLocale})} om ${timeslot} ietske binnensteken.
+
+        Beschrijving: ${description}
+
+        Check het op https://ellie-donna.web.app/
+
+        Cheerio
+        `
+      })
     })
   }
 
